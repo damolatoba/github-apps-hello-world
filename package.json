@@ -1,14 +1,14 @@
 {
   "name": "github-apps-hello-world",
   "version": "1.0.3",
-  "description": "",
+  "description": "> :wave: :earth_americas: The _Hello World_ of GitHub Apps. [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)",
   "author": "Steve Winton <stevewinton@gmail.com> (https://github.com/swinton)",
   "main": "github-apps-hello-world.js",
   "license": "ISC",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/swinton/github-apps-hello-world.git"
+    "url": "git+https://github.com/damolatoba/github-apps-hello-world.git"
   },
   "scripts": {
     "start": "node ./github-apps-hello-world.js",
@@ -16,13 +16,15 @@
     "lint": "eslint github-apps-hello-world.js 'lib/**.js' 'test/**.js' --fix"
   },
   "bin": {
-    "github-apps-hello-world": "./github-apps-hello-world.js"
+    "github-apps-hello-world": "github-apps-hello-world.js"
   },
   "dependencies": {
     "@octokit/auth-app": "^2.4.14",
     "@octokit/core": "^3.1.2",
     "dotenv": "^8.0.0",
-    "pino": "^6.5.1"
+    "github-apps-hello-world": "^1.0.3",
+    "pino": "^6.14.0",
+    "pino-pretty": "^9.1.0"
   },
   "devDependencies": {
     "eslint": "latest",
@@ -47,5 +49,13 @@
         "statements": 80
       }
     }
+  },
+  "bugs": {
+    "url": "https://github.com/damolatoba/github-apps-hello-world/issues"
+  },
+  "homepage": "https://github.com/damolatoba/github-apps-hello-world#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }

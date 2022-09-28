@@ -20,8 +20,8 @@ async function main() {
     // Create issue in demo-days/Spoon-Knife
     // https://docs.github.com/en/rest/reference/issues#create-an-issue
     const issue = await octokit.request('POST /repos/:owner/:repo/issues', {
-      owner: 'demo-days',
-      repo: 'Spoon-Knife',
+      owner: 'damolatoba',
+      repo: 'github-apps-hello-world',
       title: 'Hello world',
       body:
         ':wave: :earth_americas:\n\n![fellowshipoftheclaps](https://user-images.githubusercontent.com/27806/91333726-91c46f00-e793-11ea-9724-dc2e18ca28d0.gif)'
